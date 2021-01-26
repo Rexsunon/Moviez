@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFA0ACE925BFA90300970C91 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA0ACE825BFA90300970C91 /* RatingView.swift */; };
 		AFA16C9D25BE3C42005BB6B1 /* MoviezApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA16C9C25BE3C42005BB6B1 /* MoviezApp.swift */; };
-		AFA16C9F25BE3C42005BB6B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA16C9E25BE3C42005BB6B1 /* ContentView.swift */; };
+		AFA16C9F25BE3C42005BB6B1 /* MoviezView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA16C9E25BE3C42005BB6B1 /* MoviezView.swift */; };
 		AFA16CA125BE3C43005BB6B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA16CA025BE3C43005BB6B1 /* Assets.xcassets */; };
 		AFA16CA425BE3C43005BB6B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA16CA325BE3C43005BB6B1 /* Preview Assets.xcassets */; };
+		AFA16CB825BF2408005BB6B1 /* Moviez.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA16CB725BF2408005BB6B1 /* Moviez.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AFA0ACE825BFA90300970C91 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		AFA16C9925BE3C42005BB6B1 /* Moviez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moviez.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA16C9C25BE3C42005BB6B1 /* MoviezApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviezApp.swift; sourceTree = "<group>"; };
-		AFA16C9E25BE3C42005BB6B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AFA16C9E25BE3C42005BB6B1 /* MoviezView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviezView.swift; sourceTree = "<group>"; };
 		AFA16CA025BE3C43005BB6B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA16CA325BE3C43005BB6B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AFA16CA525BE3C43005BB6B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFA16CB725BF2408005BB6B1 /* Moviez.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moviez.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,9 @@
 		AFA16C9B25BE3C42005BB6B1 /* Moviez */ = {
 			isa = PBXGroup;
 			children = (
+				AFA16CB625BF23E2005BB6B1 /* Models */,
 				AFA16C9C25BE3C42005BB6B1 /* MoviezApp.swift */,
-				AFA16C9E25BE3C42005BB6B1 /* ContentView.swift */,
+				AFA16CB325BF172B005BB6B1 /* Views */,
 				AFA16CA025BE3C43005BB6B1 /* Assets.xcassets */,
 				AFA16CA525BE3C43005BB6B1 /* Info.plist */,
 				AFA16CA225BE3C43005BB6B1 /* Preview Content */,
@@ -67,6 +72,23 @@
 				AFA16CA325BE3C43005BB6B1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AFA16CB325BF172B005BB6B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFA16C9E25BE3C42005BB6B1 /* MoviezView.swift */,
+				AFA0ACE825BFA90300970C91 /* RatingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AFA16CB625BF23E2005BB6B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AFA16CB725BF2408005BB6B1 /* Moviez.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFA16C9F25BE3C42005BB6B1 /* ContentView.swift in Sources */,
+				AFA16C9F25BE3C42005BB6B1 /* MoviezView.swift in Sources */,
 				AFA16C9D25BE3C42005BB6B1 /* MoviezApp.swift in Sources */,
+				AFA16CB825BF2408005BB6B1 /* Moviez.swift in Sources */,
+				AFA0ACE925BFA90300970C91 /* RatingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
