@@ -10,12 +10,6 @@ import SwiftUI
 struct MoviezView: View {
     var genreList = ["sci-fi", "Action", "Drama", "Tine travel", "Game"]
     
-    var layout = [
-        GridItem(.flexible(minimum: 10)),
-        GridItem(.flexible(minimum: 10)),
-        GridItem(.flexible(minimum: 10))
-    ]
-    
     var body: some View {
         ZStack {
             Image("avengers")
@@ -29,11 +23,12 @@ struct MoviezView: View {
                         .resizable()
                         .frame(width: 250, height: 400, alignment: .center)
                         .cornerRadius(30)
+                        
                 }
                 
                 RatingView(rating: 4, label: "4.78")
                 
-                
+                GenreGridView(genres: genreList)
             }
             
         }
