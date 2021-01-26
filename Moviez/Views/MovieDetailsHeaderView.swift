@@ -19,13 +19,13 @@ struct MovieDetailsHeaderView: View {
             VStack(alignment: .leading, spacing: 20) {
                 VStack(alignment: .leading, spacing: 5) {
                     Text("Avengers: Endgame")
-                    .font(.system(size: 20))
+                        .font(.system(size: 20))
                         .fontWeight(.semibold)
                     Label("4h 2m" , systemImage: "clock")
                         .font(.subheadline)
                         .foregroundColor(.gray)
                 }
-
+                
                 Text("Genre: Action, Fantacy, Sci-fi, drama, Time travel")
                     .font(.subheadline)
                     .foregroundColor(.gray)
