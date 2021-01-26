@@ -38,7 +38,7 @@ struct MoviezView: View {
             }
             
             CustomBottomSheetView(isShown: $isShown, modalHeight: 600) {
-                Text("hello")
+                Text("")
             }
             .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
         }
