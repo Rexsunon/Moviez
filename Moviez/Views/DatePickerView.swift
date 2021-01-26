@@ -31,20 +31,20 @@ struct DatePickerView: View {
                         Text(str.prefix(4))
                         RoundedRectangle(cornerRadius: CGFloat(5.0) / 2.0)
                             .frame(width: 40, height: CGFloat(2.0))
-                            .foregroundColor(Color.white)
+//                            .foregroundColor(Color.white)
                             .padding(5)
                         Text(str.suffix(3))
                     }
-                    .padding(12)
-                    .background(Color.gray)
+                    .padding(5)
+                    .background(Color.white)
 //                    .foregroundColor(Color.white)
                     .cornerRadius(20)
+                    .shadow(radius: 3)
                 }
-                
             }
         }
         .frame(width: UIScreen.main.bounds.size.width)
-        .padding(.horizontal)
+//        .padding(.horizontal)
     }
     
     func daysOfCurrentWeek() -> [Date] {
@@ -64,6 +64,6 @@ struct DatePickerView: View {
 struct DatePickerView_Previews: PreviewProvider {
     static var previews: some View {
         DatePickerView()
-//            .previewLayout(.sizeThatFits)
+            .previewLayout(.sizeThatFits)
     }
 }
