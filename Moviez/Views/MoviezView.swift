@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MoviezView: View {
+    @State var isShown = false
     var genreList = ["sci-fi", "Action", "Drama", "Tine travel", "Game"]
     
     var body: some View {
@@ -23,7 +24,12 @@ struct MoviezView: View {
                         .resizable()
                         .frame(width: 250, height: 400, alignment: .center)
                         .cornerRadius(30)
-                        
+                        .gesture(
+                            TapGesture()
+                                .onEnded {
+                                    self.isShown.toggle()
+                                }
+                        )
                 }
                 
                 RatingView(rating: 4, label: "4.78")
@@ -31,6 +37,10 @@ struct MoviezView: View {
                 GenreGridView(genres: genreList)
             }
             
+            CustomBottomSheetView(isShown: $isShown, modalHeight: 600) {
+                Text("hello")
+            }
+            .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
         }
     }
 }

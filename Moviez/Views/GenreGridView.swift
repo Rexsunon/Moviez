@@ -30,7 +30,7 @@ struct GenreGridView: View {
                 }
             }
         }
-        .frame(width: 350)
+        .frame(width: UIScreen.main.bounds.size.width)
     }
 }
 
