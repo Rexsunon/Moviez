@@ -35,14 +35,14 @@ struct DatePickerView: View {
                             .padding(5)
                         Text(str.suffix(3))
                     }
-                    .padding(5)
+                    .padding(7)
                     .background(Color.white)
-//                    .foregroundColor(Color.white)
                     .cornerRadius(20)
                     .shadow(radius: 3)
                 }
             }
         }
+        .foregroundColor(.black)
         .frame(width: UIScreen.main.bounds.size.width)
 //        .padding(.horizontal)
     }

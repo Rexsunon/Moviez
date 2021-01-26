@@ -12,6 +12,7 @@ struct MovieDetailsView: View {
         VStack(spacing: 20) {
             MovieDetailsHeaderView()
             DatePickerView()
+            MoviezWatchTimeGridView()
         }
     }
 }

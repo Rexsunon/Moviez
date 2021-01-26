@@ -21,6 +21,7 @@ struct MovieDetailsHeaderView: View {
                     Text("Avengers: Endgame")
                         .font(.system(size: 20))
                         .fontWeight(.semibold)
+                        .foregroundColor(.black)
                     Label("4h 2m" , systemImage: "clock")
                         .font(.subheadline)
                         .foregroundColor(.gray)

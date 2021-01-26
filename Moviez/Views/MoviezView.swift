@@ -37,10 +37,11 @@ struct MoviezView: View {
                 GenreGridView(genres: genreList)
             }
             
-            CustomBottomSheetView(isShown: $isShown, modalHeight: 600) {
+            CustomBottomSheetView(isShown: $isShown, modalHeight: 760) {
                 MovieDetailsView()
             }
             .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
+            .padding()
         }
     }
 }
