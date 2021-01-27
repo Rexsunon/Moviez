@@ -23,24 +23,28 @@ struct MoviezWatchTimeGridView: View {
                 .fontWeight(.semibold)
                 .textCase(.uppercase)
                 .font(.system(size: 20))
+                .padding(.leading)
 
             LazyVGrid(columns: layout) {
                 ForEach(watchTimeList, id: \.self) { time in
                     Text(time)
+                        .font(.system(size: 14))
                         .padding(8)
                         .background(Color.white)
                         .cornerRadius(12)
                         .shadow(radius: 3)
                 }
             }
+            .padding(.horizontal)
         }
         .foregroundColor(.black)
-        .padding(.horizontal, 16)
+        .padding(.horizontal, 20)
     }
 }
 
 struct MoviezWatchTimeGridView_Previews: PreviewProvider {
     static var previews: some View {
         MoviezWatchTimeGridView()
+            .previewLayout(.sizeThatFits)
     }
 }

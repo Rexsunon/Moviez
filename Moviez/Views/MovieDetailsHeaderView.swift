@@ -19,24 +19,25 @@ struct MovieDetailsHeaderView: View {
             VStack(alignment: .leading, spacing: 20) {
                 VStack(alignment: .leading, spacing: 5) {
                     Text("Avengers: Endgame")
-                        .font(.system(size: 20))
+                        .font(.system(size: 18))
                         .fontWeight(.semibold)
                         .foregroundColor(.black)
                     Label("4h 2m" , systemImage: "clock")
-                        .font(.subheadline)
+                        .font(.system(size: 13))
                         .foregroundColor(.gray)
                 }
                 
                 Text("Genre: Action, Fantacy, Sci-fi, drama, Time travel")
-                    .font(.subheadline)
+                    .font(.system(size: 13))
                     .foregroundColor(.gray)
                 
                 Text("Rating: 4.9")
-                    .font(.subheadline)
+                    .font(.system(size: 13))
                     .foregroundColor(.gray)
                 
                 Text("Twenty-three days after Thanos used the Infinity Gauntlet to kill half of all life in the universe")
-                    .font(.subheadline)
+                    .font(.system(size: 13))
+                    .lineLimit(4)
                     .foregroundColor(.gray)
             }
         }
