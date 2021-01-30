@@ -23,6 +23,7 @@
 		AFA16CB825BF2408005BB6B1 /* Moviez.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA16CB725BF2408005BB6B1 /* Moviez.swift */; };
 		AFA3CC4025C4E2C3007C77F5 /* Seat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA3CC3F25C4E2C3007C77F5 /* Seat.swift */; };
 		AFA3CC4425C4E6CE007C77F5 /* ScreenShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA3CC4325C4E6CE007C77F5 /* ScreenShape.swift */; };
+		AFA3CC4725C4FC76007C77F5 /* ChairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA3CC4625C4FC76007C77F5 /* ChairView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		AFA16CB725BF2408005BB6B1 /* Moviez.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moviez.swift; sourceTree = "<group>"; };
 		AFA3CC3F25C4E2C3007C77F5 /* Seat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seat.swift; sourceTree = "<group>"; };
 		AFA3CC4325C4E6CE007C77F5 /* ScreenShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShape.swift; sourceTree = "<group>"; };
+		AFA3CC4625C4FC76007C77F5 /* ChairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChairView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				AF0943E925C06A290083D936 /* DatePickerView.swift */,
 				AF0943EF25C0C9540083D936 /* MoviezWatchTimeGridView.swift */,
 				AF0943F225C1F13E0083D936 /* SeatsReservationView.swift */,
+				AFA3CC4625C4FC76007C77F5 /* ChairView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFA3CC4025C4E2C3007C77F5 /* Seat.swift in Sources */,
+				AFA3CC4725C4FC76007C77F5 /* ChairView.swift in Sources */,
 				AF0943DC25BFC9DA0083D936 /* CustomBottomSheetView.swift in Sources */,
 				AF0943D925BFBF3A0083D936 /* GenreGridView.swift in Sources */,
 				AF0943F325C1F13E0083D936 /* SeatsReservationView.swift in Sources */,
