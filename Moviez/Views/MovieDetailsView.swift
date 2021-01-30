@@ -27,7 +27,7 @@ struct MovieDetailsView: View {
                 .foregroundColor(.white)
                 .padding()
                 .padding(.horizontal, 30)
-                .background(Color.orange)
+                .background(Color(red: 0.8000, green: 0.1725, blue: 0.1490))
                 .cornerRadius(10)
                 .shadow(radius: 10)
             }

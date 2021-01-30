@@ -33,7 +33,7 @@ struct CustomBottomSheetView<Content: View> : View {
                 Spacer()
                     .edgesIgnoringSafeArea(.all)
                     .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
-                    .blur(radius: isShown ? CGFloat((5.0 * fractionProgress(lowerLimit: 0, upperLimit: Double(modalHeight), current: Double(dragState.translation.height), inverted: false))) : 0.0)
+                    .blur(radius: isShown ? CGFloat((5.0 * fractionProgress(lowerLimit: 0, upperLimit: Double(modalHeight), current: Double(dragState.translation.height), inverted: true))) : 0.0)
                     .animation(.interpolatingSpring(stiffness: 300.0, damping: 30.0, initialVelocity: 10.0))
                     .gesture(
                         TapGesture()

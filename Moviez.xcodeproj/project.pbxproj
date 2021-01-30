@@ -14,12 +14,15 @@
 		AF0943EA25C06A290083D936 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0943E925C06A290083D936 /* DatePickerView.swift */; };
 		AF0943ED25C0818F0083D936 /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0943EC25C0818F0083D936 /* WeekDay.swift */; };
 		AF0943F025C0C9540083D936 /* MoviezWatchTimeGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0943EF25C0C9540083D936 /* MoviezWatchTimeGridView.swift */; };
+		AF0943F325C1F13E0083D936 /* SeatsReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0943F225C1F13E0083D936 /* SeatsReservationView.swift */; };
 		AFA0ACE925BFA90300970C91 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA0ACE825BFA90300970C91 /* RatingView.swift */; };
 		AFA16C9D25BE3C42005BB6B1 /* MoviezApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA16C9C25BE3C42005BB6B1 /* MoviezApp.swift */; };
 		AFA16C9F25BE3C42005BB6B1 /* MoviezView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA16C9E25BE3C42005BB6B1 /* MoviezView.swift */; };
 		AFA16CA125BE3C43005BB6B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA16CA025BE3C43005BB6B1 /* Assets.xcassets */; };
 		AFA16CA425BE3C43005BB6B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFA16CA325BE3C43005BB6B1 /* Preview Assets.xcassets */; };
 		AFA16CB825BF2408005BB6B1 /* Moviez.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA16CB725BF2408005BB6B1 /* Moviez.swift */; };
+		AFA3CC4025C4E2C3007C77F5 /* Seat.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA3CC3F25C4E2C3007C77F5 /* Seat.swift */; };
+		AFA3CC4425C4E6CE007C77F5 /* ScreenShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA3CC4325C4E6CE007C77F5 /* ScreenShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,7 @@
 		AF0943E925C06A290083D936 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		AF0943EC25C0818F0083D936 /* WeekDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
 		AF0943EF25C0C9540083D936 /* MoviezWatchTimeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviezWatchTimeGridView.swift; sourceTree = "<group>"; };
+		AF0943F225C1F13E0083D936 /* SeatsReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatsReservationView.swift; sourceTree = "<group>"; };
 		AFA0ACE825BFA90300970C91 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		AFA16C9925BE3C42005BB6B1 /* Moviez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moviez.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA16C9C25BE3C42005BB6B1 /* MoviezApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviezApp.swift; sourceTree = "<group>"; };
@@ -38,6 +42,8 @@
 		AFA16CA325BE3C43005BB6B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AFA16CA525BE3C43005BB6B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFA16CB725BF2408005BB6B1 /* Moviez.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moviez.swift; sourceTree = "<group>"; };
+		AFA3CC3F25C4E2C3007C77F5 /* Seat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seat.swift; sourceTree = "<group>"; };
+		AFA3CC4325C4E6CE007C77F5 /* ScreenShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 		AFA16C9B25BE3C42005BB6B1 /* Moviez */ = {
 			isa = PBXGroup;
 			children = (
+				AFA3CC4225C4E6AE007C77F5 /* Shapes */,
 				AFA16CB625BF23E2005BB6B1 /* Models */,
 				AFA16C9C25BE3C42005BB6B1 /* MoviezApp.swift */,
 				AFA16CB325BF172B005BB6B1 /* Views */,
@@ -99,6 +106,7 @@
 				AF0943E625C060350083D936 /* MovieDetailsView.swift */,
 				AF0943E925C06A290083D936 /* DatePickerView.swift */,
 				AF0943EF25C0C9540083D936 /* MoviezWatchTimeGridView.swift */,
+				AF0943F225C1F13E0083D936 /* SeatsReservationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -108,8 +116,17 @@
 			children = (
 				AFA16CB725BF2408005BB6B1 /* Moviez.swift */,
 				AF0943EC25C0818F0083D936 /* WeekDay.swift */,
+				AFA3CC3F25C4E2C3007C77F5 /* Seat.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AFA3CC4225C4E6AE007C77F5 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				AFA3CC4325C4E6CE007C77F5 /* ScreenShape.swift */,
+			);
+			path = Shapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,8 +198,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA3CC4025C4E2C3007C77F5 /* Seat.swift in Sources */,
 				AF0943DC25BFC9DA0083D936 /* CustomBottomSheetView.swift in Sources */,
 				AF0943D925BFBF3A0083D936 /* GenreGridView.swift in Sources */,
+				AF0943F325C1F13E0083D936 /* SeatsReservationView.swift in Sources */,
 				AF0943ED25C0818F0083D936 /* WeekDay.swift in Sources */,
 				AF0943E725C060350083D936 /* MovieDetailsView.swift in Sources */,
 				AF0943EA25C06A290083D936 /* DatePickerView.swift in Sources */,
@@ -190,6 +209,7 @@
 				AFA16C9F25BE3C42005BB6B1 /* MoviezView.swift in Sources */,
 				AFA16C9D25BE3C42005BB6B1 /* MoviezApp.swift in Sources */,
 				AFA16CB825BF2408005BB6B1 /* Moviez.swift in Sources */,
+				AFA3CC4425C4E6CE007C77F5 /* ScreenShape.swift in Sources */,
 				AF0943F025C0C9540083D936 /* MoviezWatchTimeGridView.swift in Sources */,
 				AFA0ACE925BFA90300970C91 /* RatingView.swift in Sources */,
 			);
