@@ -11,7 +11,7 @@ struct ScreenShape: Shape {
     func path(in rect: CGRect) -> Path {
         return Path { path in
             path.move(to: CGPoint(x: rect.origin.x + screenCurveture, y: rect.origin.y + screenCurveture))
-            path.addQuadCurve(to: CGPoint(x: rect.width - screenCurveture, y: rect.origin.y + screenCurveture), control: CGPoint(x: rect.midX, y: rect.origin.y))
+            path.addQuadCurve(to: CGPoint(x: rect.width - screenCurveture, y: rect.origin.y + screenCurveture), control: CGPoint(x: rect.midX, y: rect.maxY + 50))
             
             if isClip {
                 path.addLine(to: CGPoint(x: rect.width, y: rect.height))

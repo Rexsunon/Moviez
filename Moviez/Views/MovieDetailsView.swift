@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MovieDetailsView: View {
+    //    @Binding var seats: [Seat]
     var body: some View {
         VStack(spacing: 30) {
             MovieDetailsHeaderView()
@@ -15,23 +16,19 @@ struct MovieDetailsView: View {
             DatePickerView()
             VStack(spacing: 40) {
                 MoviezWatchTimeGridView()
-                Button(action: {
-                    
-                }) {
+                NavigationLink(destination: SeatsReservationView()) {
                     Text("Book Now")
                         .fontWeight(.bold)
                         .textCase(.uppercase)
                         .font(.system(size: 20))
-                    
+                        .foregroundColor(.white)
+                        .padding()
+                        .padding(.horizontal, 30)
+                        .background(Color(red: 0.8000, green: 0.1725, blue: 0.1490))
+                        .cornerRadius(10)
+                        .shadow(radius: 10)
                 }
-                .foregroundColor(.white)
-                .padding()
-                .padding(.horizontal, 30)
-                .background(Color(red: 0.8000, green: 0.1725, blue: 0.1490))
-                .cornerRadius(10)
-                .shadow(radius: 10)
             }
-            
         }
         .padding(.vertical)
     }

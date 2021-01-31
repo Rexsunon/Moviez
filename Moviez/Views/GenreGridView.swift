@@ -17,20 +17,20 @@ struct GenreGridView: View {
     ]
     
     var body: some View {
-        HStack {
-            LazyVGrid(columns: layout, alignment: .center) {
-                ForEach(genres, id: \.self) { item in
-                    Text(item)
-                        .padding(.vertical, 2)
-                        .padding(.horizontal, 10)
-                        .background(Color.white)
-                        .foregroundColor(.black)
-                        .opacity(0.5)
-                        .cornerRadius(10.0)
-                }
+        LazyVGrid(columns: layout, alignment: .center) {
+            ForEach(genres, id: \.self) { item in
+                Text(item)
+                    .padding(.vertical, 2)
+                    .padding(.horizontal, 10)
+                    .background(Color.white)
+                    .foregroundColor(.black)
+                    .opacity(0.5)
+                    .cornerRadius(10.0)
             }
         }
         .frame(width: UIScreen.main.bounds.size.width)
+        
+        
     }
 }
 

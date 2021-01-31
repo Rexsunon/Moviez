@@ -16,3 +16,11 @@ struct Seat: Identifiable {
         Seat(id: UUID(), row: 0, number: 0)
     }
 }
+
+extension Seat {
+    static var data: [Seat] {
+        [
+            Seat(id: UUID(), row: 1, number: 2)
+        ]
+    }
+}

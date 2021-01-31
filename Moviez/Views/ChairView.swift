@@ -19,12 +19,12 @@ struct ChairView: View {
     var body: some View {
         VStack(spacing: 2) {
             Rectangle()
-                .frame(width: self.width, height: self.width * 2/3)
+                .frame(width: width - 10, height: width / 5)
                 .foregroundColor(isSelectable ? isSelected ? accentColor : Color.gray.opacity(0.5) : accentColor)
                 .cornerRadius(width / 5)
             
             Rectangle()
-                .frame(width: width - 10, height: width / 5)
+                .frame(width: self.width, height: self.width * 2/3)
                 .foregroundColor(isSelectable ? isSelected ? accentColor : Color.gray.opacity(0.5) : accentColor)
                 .cornerRadius(width / 5)
         }
