@@ -26,6 +26,7 @@
 		AFA3CC4725C4FC76007C77F5 /* ChairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA3CC4625C4FC76007C77F5 /* ChairView.swift */; };
 		AFA3CC4A25C50701007C77F5 /* ChairLegendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA3CC4925C50701007C77F5 /* ChairLegendView.swift */; };
 		AFA3CC4D25C58BCC007C77F5 /* SeatsReservationNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA3CC4C25C58BCC007C77F5 /* SeatsReservationNavBar.swift */; };
+		AFA3CC5525C74BFE007C77F5 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA3CC5425C74BFE007C77F5 /* PaymentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		AFA3CC4625C4FC76007C77F5 /* ChairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChairView.swift; sourceTree = "<group>"; };
 		AFA3CC4925C50701007C77F5 /* ChairLegendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChairLegendView.swift; sourceTree = "<group>"; };
 		AFA3CC4C25C58BCC007C77F5 /* SeatsReservationNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatsReservationNavBar.swift; sourceTree = "<group>"; };
+		AFA3CC5425C74BFE007C77F5 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				AFA3CC4625C4FC76007C77F5 /* ChairView.swift */,
 				AFA3CC4925C50701007C77F5 /* ChairLegendView.swift */,
 				AFA3CC4C25C58BCC007C77F5 /* SeatsReservationNavBar.swift */,
+				AFA3CC5425C74BFE007C77F5 /* PaymentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFA3CC4025C4E2C3007C77F5 /* Seat.swift in Sources */,
+				AFA3CC5525C74BFE007C77F5 /* PaymentView.swift in Sources */,
 				AFA3CC4A25C50701007C77F5 /* ChairLegendView.swift in Sources */,
 				AFA3CC4725C4FC76007C77F5 /* ChairView.swift in Sources */,
 				AF0943DC25BFC9DA0083D936 /* CustomBottomSheetView.swift in Sources */,

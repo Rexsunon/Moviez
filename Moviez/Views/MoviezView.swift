@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MoviezView: View {
     @State var isShown = false
+    @State private var isPresented = false
 //    @Binding var seats: [Seat]
     var genreList = ["sci-fi", "Action", "Drama", "Tine travel", "Game"]
     
@@ -29,7 +30,7 @@ struct MoviezView: View {
                             .gesture(
                                 TapGesture()
                                     .onEnded {
-                                        self.isShown.toggle()
+                                        self.isPresented.toggle()
                                     }
                             )
                     }
@@ -38,13 +39,16 @@ struct MoviezView: View {
                     
                     GenreGridView(genres: genreList)
                 }
-                
-                CustomBottomSheetView(isShown: $isShown, modalHeight: 760) {
+//                .sheet(isPresented: $isPresented) {
+//                    MovieDetailsView()
+//                }
+                CustomBottomSheetView(isShown: $isPresented, modalHeight: 760) {
                     MovieDetailsView()
                 }
                 .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
                 .padding()
             }
+            
         }
     }
 }

@@ -32,20 +32,17 @@ struct SeatsReservationView: View {
                                 .textCase(.uppercase)
                                 .font(.system(size: 13))
                         }
-                        Button(action: {
-                            
-                        }) {
+                        NavigationLink(destination: PaymentView()) {
                             Text("Buy Ticket")
                                 .foregroundColor(.white)
                                 .textCase(.uppercase)
+                                .padding()
+                                .padding(.horizontal, 30)
+                                .background(Color(red: 0.8000, green: 0.1725, blue: 0.1490))
+                                .cornerRadius(10)
+                                .shadow(radius: 10)
                         }
-                        .padding()
-                        .padding(.horizontal, 30)
-                        .background(Color(red: 0.8000, green: 0.1725, blue: 0.1490))
-                        .cornerRadius(10)
-                        .shadow(radius: 10)
                     }
-                    
                     .padding(.bottom, 50)
                 }
                 

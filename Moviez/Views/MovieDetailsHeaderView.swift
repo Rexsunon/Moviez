@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MovieDetailsHeaderView: View {
     var body: some View {
-        HStack(spacing: 5) {
+        HStack(alignment: .top, spacing: 5) {
             Image("avengers")
                 .resizable()
                 .frame(width: 150, height: 250)
