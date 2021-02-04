@@ -11,9 +11,9 @@ import SwiftUI
 struct MoviezApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                MoviezView()
-            }
+            //            NavigationView {
+            MoviezView()
+            //            }
         }
     }
 }

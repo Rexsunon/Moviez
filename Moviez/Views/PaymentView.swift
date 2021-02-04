@@ -5,11 +5,14 @@
 //  Created by Evidence Osikhena on 31/01/2021.
 //
 
+import LocalAuthentication
 import SwiftUI
 
 struct PaymentView: View {
     @State private var text: String = ""
     @State private var textHeight: Double = 20
+    @State private var isUnlock: Bool = false
+    
     let listRowPadding: Double = 5 // This is a guess
     let listRowMinHeight: Double = 45 // This is a guess
     var listRowHeight: Double {
@@ -110,18 +113,50 @@ struct PaymentView: View {
             .background(Color.gray.opacity(0.2))
             .cornerRadius(10.0)
             
-            NavigationLink(destination: Text("")) {
-                Text("Pay $22.88")
-                    .fontWeight(.bold)
-                    .textCase(.uppercase)
-                    .font(.system(size: 20))
-                    .foregroundColor(.white)
-                    .padding()
-                    .padding(.horizontal, 30)
-                    .background(Color(red: 0.8000, green: 0.1725, blue: 0.1490))
-                    .cornerRadius(10)
-                    .shadow(radius: 10)
+//            NavigationLink(destination: TicketView()) {
+                if !isUnlock {
+                    
+                    Button(action: {
+                        self.authorized()
+                        self.isUnlock = false
+                    }) {
+                        NavigationLink(destination: TicketView()) {
+                        Text("Pay $22.88")
+                            .fontWeight(.bold)
+                            .textCase(.uppercase)
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
+                            .padding()
+                            .padding(.horizontal, 30)
+                            .background(Color(red: 0.8000, green: 0.1725, blue: 0.1490))
+                            .cornerRadius(10)
+                            .shadow(radius: 10)
+                        }
+                    }
+                }
+                //                self.isUnlock = false
+//            }
+        }
+    }
+    
+    func authorized() {
+        let context = LAContext()
+        var error: NSError?
+        
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "Use face id to authenticate and purchase your movie ticket"
+            
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
+                DispatchQueue.main.async {
+                    if success {
+                        self.isUnlock = true
+                    } else {
+                        // error
+                    }
+                }
             }
+        } else {
+            // error
         }
     }
 }
