@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct MovieDetailsHeaderView: View {
+    @Binding var movie: Moviez
+
     var body: some View {
         HStack(alignment: .top, spacing: 5) {
-            Image("avengers")
+            Image(movie.imageUrl)
                 .resizable()
                 .frame(width: 150, height: 250)
                 .cornerRadius(20)
@@ -18,7 +20,7 @@ struct MovieDetailsHeaderView: View {
             Spacer()
             VStack(alignment: .leading, spacing: 20) {
                 VStack(alignment: .leading, spacing: 5) {
-                    Text("Avengers: Endgame")
+                    Text(movie.name)
                         .font(.system(size: 18))
                         .fontWeight(.semibold)
                         .foregroundColor(.black)
@@ -27,15 +29,15 @@ struct MovieDetailsHeaderView: View {
                         .foregroundColor(.gray)
                 }
                 
-                Text("Genre: Action, Fantacy, Sci-fi, drama, Time travel")
+                Text("Genre: \(movie.genreString)")
                     .font(.system(size: 13))
                     .foregroundColor(.gray)
                 
-                Text("Rating: 4.9")
+                Text("Rating: 4.0")
                     .font(.system(size: 13))
                     .foregroundColor(.gray)
                 
-                Text("Twenty-three days after Thanos used the Infinity Gauntlet to kill half of all life in the universe")
+                Text(movie.description)
                     .font(.system(size: 13))
                     .lineLimit(4)
                     .foregroundColor(.gray)
@@ -45,9 +47,15 @@ struct MovieDetailsHeaderView: View {
     }
 }
 
+extension Moviez {
+    var genreString: String {
+        ListFormatter.localizedString(byJoining: genres)
+    }
+}
+
 struct MovieDetailsHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetailsHeaderView()
+        MovieDetailsHeaderView(movie: .constant(Moviez.data[0]))
             .previewLayout(.sizeThatFits)
     }
 }

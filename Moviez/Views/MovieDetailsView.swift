@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct MovieDetailsView: View {
-    //    @Binding var seats: [Seat]
+    @Binding var movie: Moviez
+    
     var body: some View {
         VStack(spacing: 30) {
-            MovieDetailsHeaderView()
+            MovieDetailsHeaderView(movie: $movie)
                 .padding(.horizontal, 10)
             DatePickerView()
             VStack(spacing: 40) {
                 MoviezWatchTimeGridView()
-                NavigationLink(destination: SeatsReservationView()) {
+                NavigationLink(destination: SeatsReservationView(movie: $movie)) {
                     Text("Book Now")
                         .fontWeight(.bold)
                         .textCase(.uppercase)
@@ -36,7 +37,7 @@ struct MovieDetailsView: View {
 
 struct MovieDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetailsView()
+        MovieDetailsView(movie: .constant(Moviez.data[0]))
             .previewLayout(.sizeThatFits)
     }
 }

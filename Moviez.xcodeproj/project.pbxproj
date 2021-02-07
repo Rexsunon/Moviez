@@ -15,6 +15,7 @@
 		AF0943ED25C0818F0083D936 /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0943EC25C0818F0083D936 /* WeekDay.swift */; };
 		AF0943F025C0C9540083D936 /* MoviezWatchTimeGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0943EF25C0C9540083D936 /* MoviezWatchTimeGridView.swift */; };
 		AF0943F325C1F13E0083D936 /* SeatsReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0943F225C1F13E0083D936 /* SeatsReservationView.swift */; };
+		AF240A0625D03F68006852A7 /* MoviezSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF240A0525D03F68006852A7 /* MoviezSliderView.swift */; };
 		AFA0ACE925BFA90300970C91 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA0ACE825BFA90300970C91 /* RatingView.swift */; };
 		AFA16C9D25BE3C42005BB6B1 /* MoviezApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA16C9C25BE3C42005BB6B1 /* MoviezApp.swift */; };
 		AFA16C9F25BE3C42005BB6B1 /* MoviezView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA16C9E25BE3C42005BB6B1 /* MoviezView.swift */; };
@@ -39,6 +40,7 @@
 		AF0943EC25C0818F0083D936 /* WeekDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
 		AF0943EF25C0C9540083D936 /* MoviezWatchTimeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviezWatchTimeGridView.swift; sourceTree = "<group>"; };
 		AF0943F225C1F13E0083D936 /* SeatsReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatsReservationView.swift; sourceTree = "<group>"; };
+		AF240A0525D03F68006852A7 /* MoviezSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviezSliderView.swift; sourceTree = "<group>"; };
 		AFA0ACE825BFA90300970C91 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		AFA16C9925BE3C42005BB6B1 /* Moviez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moviez.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA16C9C25BE3C42005BB6B1 /* MoviezApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviezApp.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				AFA3CC4C25C58BCC007C77F5 /* SeatsReservationNavBar.swift */,
 				AFA3CC5425C74BFE007C77F5 /* PaymentView.swift */,
 				AFA3CC5725CB78F3007C77F5 /* TicketView.swift */,
+				AF240A0525D03F68006852A7 /* MoviezSliderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFA3CC4025C4E2C3007C77F5 /* Seat.swift in Sources */,
+				AF240A0625D03F68006852A7 /* MoviezSliderView.swift in Sources */,
 				AFA3CC5525C74BFE007C77F5 /* PaymentView.swift in Sources */,
 				AFA3CC4A25C50701007C77F5 /* ChairLegendView.swift in Sources */,
 				AFA3CC4725C4FC76007C77F5 /* ChairView.swift in Sources */,

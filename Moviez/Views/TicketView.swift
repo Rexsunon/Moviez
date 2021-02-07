@@ -9,11 +9,12 @@ import LocalAuthentication
 import SwiftUI
 
 struct TicketView: View {
+    @Binding var movie: Moviez
     @State private var isUnlock: Bool = false
     var body: some View {
         VStack {
             HStack(alignment: .bottom) {
-                Image("avengers")
+                Image(movie.imageUrl)
                     .resizable()
                     .frame(width: 130, height: 180)
                     .cornerRadius(10)
@@ -164,7 +165,7 @@ struct TicketView: View {
 
 struct TicketView_Previews: PreviewProvider {
     static var previews: some View {
-        TicketView()
+        TicketView(movie: .constant(Moviez.data[0]))
             
     }
 }

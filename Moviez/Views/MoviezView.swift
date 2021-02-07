@@ -8,22 +8,22 @@
 import SwiftUI
 
 struct MoviezView: View {
+    @Binding var movie: Moviez
     @State var isShown = false
     @State private var isPresented = false
 //    @Binding var seats: [Seat]
-    var genreList = ["sci-fi", "Action", "Drama", "Tine travel", "Game"]
     
     var body: some View {
         NavigationView {
             ZStack {
-                Image("avengers")
+                Image(movie.imageUrl)
                     .blur(radius: 10.0)
                 VStack(spacing: 30) {
                     VStack{
-                        Image("avengers-logo")
+                        Image(movie.logoUrl)
                         .resizable()
                         .frame(width: 180, height: 100, alignment: .top)
-                        Image("avengers")
+                        Image(movie.imageUrl)
                             .resizable()
                             .frame(width: 250, height: 400, alignment: .center)
                             .cornerRadius(30)
@@ -35,15 +35,15 @@ struct MoviezView: View {
                             )
                     }
                     
-                    RatingView(rating: 4, label: "4.78")
+                    RatingView(rating: Int(movie.rating), label: "\(movie.rating)")
                     
-                    GenreGridView(genres: genreList)
+                    GenreGridView(genres: movie.genres)
                 }
 //                .sheet(isPresented: $isPresented) {
 //                    MovieDetailsView()
 //                }
                 CustomBottomSheetView(isShown: $isPresented, modalHeight: 760) {
-                    MovieDetailsView()
+                    MovieDetailsView(movie: $movie)
                 }
                 .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
                 .padding()
@@ -55,6 +55,6 @@ struct MoviezView: View {
 
 struct MoviezView_Previews: PreviewProvider {
     static var previews: some View {
-        MoviezView()
+        MoviezView(movie: .constant(Moviez.data[1]))
     }
 }

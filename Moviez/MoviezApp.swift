@@ -9,10 +9,11 @@ import SwiftUI
 
 @main
 struct MoviezApp: App {
+    @State private var movie: Moviez = Moviez.data[0]
     var body: some Scene {
         WindowGroup {
             //            NavigationView {
-            MoviezView()
+            MoviezView(movie: $movie)
             //            }
         }
     }
