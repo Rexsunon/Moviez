@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SeatsReservationView: View {
-    @Binding var movie: Moviez
+    var movie: Moviez
     @State var selectedSeats: [Seat] = Seat.data
     
     var body: some View {
@@ -33,7 +33,7 @@ struct SeatsReservationView: View {
                                 .textCase(.uppercase)
                                 .font(.system(size: 13))
                         }
-                        NavigationLink(destination: PaymentView(movie: $movie)) {
+                        NavigationLink(destination: PaymentView(movie: movie)) {
                             Text("Buy Ticket")
                                 .foregroundColor(.white)
                                 .textCase(.uppercase)
@@ -48,7 +48,7 @@ struct SeatsReservationView: View {
                 }
                 
             }
-            .navigationBarItems(leading: SeatsReservationNavBar(title: $movie.name))
+            .navigationBarItems(leading: SeatsReservationNavBar(title: movie.name))
             .navigationBarTitleDisplayMode(.inline)
             .padding(.top, 0)
 //        }
@@ -124,6 +124,6 @@ struct SeatsReservationView: View {
 
 struct SeatsReservationView_Previews: PreviewProvider {
     static var previews: some View {
-        SeatsReservationView(movie: .constant(Moviez.data[0]),selectedSeats: Seat.data)
+        SeatsReservationView(movie: Moviez.data[0],selectedSeats: Seat.data)
     }
 }

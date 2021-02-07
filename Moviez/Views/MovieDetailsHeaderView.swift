@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MovieDetailsHeaderView: View {
-    @Binding var movie: Moviez
+    var movie: Moviez
 
     var body: some View {
         HStack(alignment: .top, spacing: 5) {
@@ -55,7 +55,7 @@ extension Moviez {
 
 struct MovieDetailsHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetailsHeaderView(movie: .constant(Moviez.data[0]))
+        MovieDetailsHeaderView(movie: Moviez.data[0])
             .previewLayout(.sizeThatFits)
     }
 }

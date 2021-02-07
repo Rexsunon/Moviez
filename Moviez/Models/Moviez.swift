@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Moviez: Identifiable {
+struct Moviez: Identifiable, Equatable {
     let id: UUID
     var name: String
     var imageUrl: String

@@ -9,7 +9,7 @@ import LocalAuthentication
 import SwiftUI
 
 struct PaymentView: View {
-    @Binding var movie: Moviez
+    var movie: Moviez
     @State private var text: String = ""
     @State private var textHeight: Double = 20
     @State private var isUnlock: Bool = false
@@ -121,7 +121,7 @@ struct PaymentView: View {
                         self.authorized()
                         self.isUnlock = false
                     }) {
-                        NavigationLink(destination: TicketView(movie: $movie)) {
+                        NavigationLink(destination: TicketView(movie: movie)) {
                         Text("Pay $22.88")
                             .fontWeight(.bold)
                             .textCase(.uppercase)
@@ -164,6 +164,6 @@ struct PaymentView: View {
 
 struct PaymentView_Previews: PreviewProvider {
     static var previews: some View {
-        PaymentView(movie: .constant(Moviez.data[0]))
+        PaymentView(movie: Moviez.data[0])
     }
 }

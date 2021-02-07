@@ -6,15 +6,21 @@
 //
 
 import SwiftUI
+import SwiftUIPager
 
 struct MoviezSliderView: View {
+    @Binding var moviez: [Moviez]
+    @StateObject var pageIndex: Page = .first()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Pager(page: self.pageIndex, data: self.moviez, id: \.name) { movie in
+//            MoviezView(movie: movie)
+        }
+        .ignoresSafeArea()
     }
 }
 
 struct MoviezSliderView_Previews: PreviewProvider {
     static var previews: some View {
-        MoviezSliderView()
+        MoviezSliderView(moviez: .constant(Moviez.data))
     }
 }

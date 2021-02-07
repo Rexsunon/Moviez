@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SeatsReservationNavBar: View {
-    @Binding var title: String
+    var title: String
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
@@ -33,7 +33,7 @@ struct SeatsReservationNavBar: View {
 
 struct SeatsReservationNavBar_Previews: PreviewProvider {
     static var previews: some View {
-        SeatsReservationNavBar(title: .constant("Avengers: Endgame"))
+        SeatsReservationNavBar(title: "Avengers: Endgame")
             .previewLayout(.sizeThatFits)
     }
 }

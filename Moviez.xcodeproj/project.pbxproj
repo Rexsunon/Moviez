@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		AF0943F025C0C9540083D936 /* MoviezWatchTimeGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0943EF25C0C9540083D936 /* MoviezWatchTimeGridView.swift */; };
 		AF0943F325C1F13E0083D936 /* SeatsReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0943F225C1F13E0083D936 /* SeatsReservationView.swift */; };
 		AF240A0625D03F68006852A7 /* MoviezSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF240A0525D03F68006852A7 /* MoviezSliderView.swift */; };
+		AF240A0A25D054A6006852A7 /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = AF240A0925D054A6006852A7 /* SwiftUIPager */; };
 		AFA0ACE925BFA90300970C91 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA0ACE825BFA90300970C91 /* RatingView.swift */; };
 		AFA16C9D25BE3C42005BB6B1 /* MoviezApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA16C9C25BE3C42005BB6B1 /* MoviezApp.swift */; };
 		AFA16C9F25BE3C42005BB6B1 /* MoviezView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA16C9E25BE3C42005BB6B1 /* MoviezView.swift */; };
@@ -63,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF240A0A25D054A6006852A7 /* SwiftUIPager in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +165,9 @@
 			dependencies = (
 			);
 			name = Moviez;
+			packageProductDependencies = (
+				AF240A0925D054A6006852A7 /* SwiftUIPager */,
+			);
 			productName = Moviez;
 			productReference = AFA16C9925BE3C42005BB6B1 /* Moviez.app */;
 			productType = "com.apple.product-type.application";
@@ -190,6 +195,9 @@
 				Base,
 			);
 			mainGroup = AFA16C9025BE3C42005BB6B1;
+			packageReferences = (
+				AF240A0825D054A6006852A7 /* XCRemoteSwiftPackageReference "SwiftUIPager" */,
+			);
 			productRefGroup = AFA16C9A25BE3C42005BB6B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -424,6 +432,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF240A0825D054A6006852A7 /* XCRemoteSwiftPackageReference "SwiftUIPager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fermoya/SwiftUIPager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF240A0925D054A6006852A7 /* SwiftUIPager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF240A0825D054A6006852A7 /* XCRemoteSwiftPackageReference "SwiftUIPager" */;
+			productName = SwiftUIPager;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AFA16C9125BE3C42005BB6B1 /* Project object */;
 }
